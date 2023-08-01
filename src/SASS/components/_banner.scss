@@ -1,0 +1,40 @@
+.banner {
+    position: relative; 
+    &Img {
+        display: block;
+        max-width: 75%;
+        border-radius: 20px;
+        margin: auto;
+        object-fit: cover;
+        height: 200px;
+        width: 100%;
+        filter: brightness(0.7);
+        @media (max-width: 767px) {
+            max-width: 90%;
+            height: 100px;
+        }
+    }
+    &Text {
+        position: absolute;
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -120%); 
+        color: white;
+        font-size: 36px;
+        text-align: center;
+        @media (max-width: 1039px){
+            bottom: -50px;
+            left: 15%;
+            transform: none;
+            text-align: left;
+            width: 65%;
+            font-size: 24px;
+        }
+        @media (max-width: 767px) {
+            top: 1%;
+            left: 8%;
+            width: 55%;
+            font-size: 20px;
+        }
+      }
+}

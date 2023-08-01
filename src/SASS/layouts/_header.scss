@@ -1,0 +1,34 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 75%;
+    margin: auto;
+    align-items: center;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    @media (max-width: 767px) {
+        max-width: 90%;
+    }
+
+
+    &Nav a {
+        margin-left: 40px;
+        color: #FF6060;
+        text-decoration: none;
+        font-size: 18px;
+        @media (max-width: 767px) {
+            font-size: 12px;
+            margin-left: 20px;
+        }
+    }
+
+    &Nav a:hover {
+        text-decoration: underline;
+    }
+
+    &Logo img{
+    @media (max-width: 767px) {
+          content: url('../assets/logoMobile.png');
+    }
+    }
+}

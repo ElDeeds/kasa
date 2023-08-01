@@ -1,0 +1,21 @@
+.footer {
+    background-color: black;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    &Logo {
+        display: flex;
+        justify-content: center;
+    }
+    @media (max-width: 767px) {
+        padding: 15%;
+    }
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    @media (max-width: 767px) {
+      width: 50%;
+      margin: auto;
+    }
+}
