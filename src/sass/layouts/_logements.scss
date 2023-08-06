@@ -1,0 +1,78 @@
+.logementInfo {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    @media (max-width: 767px) {
+        flex-direction: column;
+    }
+}
+
+.logementDesc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+}
+
+.logementDescHost{
+    display: flex;
+    
+}
+
+.logementTitle, .logementLoc {
+    color: #FF6060;
+}
+
+.hostImg{
+    border-radius: 100px;
+    height: 75px;
+    width: 75px;
+}
+
+.hostName {
+    color: #FF6060;
+    margin: auto;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.hostFirstName,
+.hostLastName {
+    color: #FF6060;
+    font-size: 18px;
+    margin: 0;
+    font-weight: 500;
+}
+
+.hostStars {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    @media (max-width: 767px) {
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-top: 25px;
+    }
+}
+
+// Collapse logement
+
+.logementCollapse {
+    display: flex;
+    width: 83%;
+    margin: auto;
+    @media (max-width: 767px) {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+}
+
+

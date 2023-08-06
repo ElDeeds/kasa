@@ -1,0 +1,52 @@
+.carousel {
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	min-height: 470px;
+	position: relative;
+    margin: auto;
+	@media (max-width: 767px) {
+        min-height: 250px;
+    }
+}
+
+.carouselImg {
+    position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	object-fit: cover;
+	object-position: center;
+    border-radius: 15px;
+}
+
+.arrow {
+    position: absolute;
+}
+
+.leftArrow {
+	left: 10px;
+}
+.rightArrow {
+	right: 10px;
+}
+.photoCounter {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .leftArrow {
+        content: url('../assets/leftArrowMobile.png');
+    }
+
+    .rightArrow {
+        content: url('../assets/rightArrowMobile.png');
+    }
+}

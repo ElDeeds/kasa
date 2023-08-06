@@ -5,7 +5,13 @@
 
 @use "layouts/header";
 @use "layouts/footer";
+@use "layouts/notFound";
+@use "layouts/logements";
 
 
 @use "components/indexCards";
-@use "components/banner";
+@use "components/bannerImg";
+@use "components/collapse";
+@use "components/carousel";
+@use "components/tag";
+@use "components/stars";

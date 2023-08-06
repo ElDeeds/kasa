@@ -1,13 +1,13 @@
 .header {
     display: flex;
     justify-content: space-between;
-    max-width: 75%;
+    max-width: 80%;
     margin: auto;
     align-items: center;
     margin-top: 1%;
     margin-bottom: 2%;
     @media (max-width: 767px) {
-        max-width: 90%;
+        max-width: 80%;
     }
 
 
@@ -26,9 +26,18 @@
         text-decoration: underline;
     }
 
+    &Nav .active {
+        text-decoration: underline;
+    }
+
     &Logo img{
     @media (max-width: 767px) {
           content: url('../assets/logoMobile.png');
     }
+    
     }
+    
+    .activeLink {
+        text-decoration: underline;
+      }
 }

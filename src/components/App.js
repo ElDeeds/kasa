@@ -1,17 +1,23 @@
-import Index from '../pages/index'
-import Logements from '../pages/logements'
-import About from '../pages/about'
+import React from 'react';
+import Index from '../pages/index';
+import Logements from '../pages/logements';
+import About from '../pages/about';
+import NotFound from '../pages/NotFound'; // Importe le composant NotFound
+//import logementsData from '../logements.json';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Index />}/>
-        <Route path='/logements' element={<Logements />}/>
-        <Route path='/about' element={<About />}/>
-      </Routes>
+                    <Route element={<Navigate replace to="/accueil" />} path="/" />
+                    <Route path="/accueil" element={<Index />}/>
+                    <Route path="/logement/:id" element={<Logements />}/>
+                    <Route path="/a-propos" element={<About />}/>
+                    <Route path="*" element={<NotFound />}/>
+                </Routes>
     </Router>
   );
 }
