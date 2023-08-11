@@ -9,16 +9,23 @@ function Collapse({ title, content }) {
         setIsCollapsed(!isCollapsed);
     };
 
+    const isContentSplit = content.includes('\n'); 
+
     return (
+        {/* Titre, arrow et ouverture du collapse */},
         <div className={`collapseCard ${isCollapsed ? '' : 'open'}`}>
             <p className='collapseCardTitle' onClick={toggleCollapse}>
                 {title} <img src={arrow} alt='Fléche ouverture collapse' className={`arrowCollapse ${isCollapsed ? '' : 'open'}`} />
             </p>
-            {/*Contenu du collapse + a la ligne par Item*/}
-            <div className={`collapseCardContent ${isCollapsed ? '' : 'open'}`}>
-                {content.split('\n').map((item, index) => (
-                    <p key={index}>{item}</p>
-                ))}
+            {/* Contenu du collapse + à la ligne par Item */}
+            <div className={`collapseCardContent ${isCollapsed ? '' : 'open'} ${isContentSplit ? 'splitContent' : ''}`}>
+                {isContentSplit ? (
+                    content.split('\n').map((item, index) => (
+                        <p key={index} className="splitContentItem">{item}</p>
+                    ))
+                ) : (
+                    <p>{content}</p>
+                )}
             </div>
         </div>
     );

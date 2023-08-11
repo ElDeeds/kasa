@@ -340,6 +340,11 @@ footer p {
   transform: rotate(-180deg);
 }
 
+p.splitContentItem {
+  padding: 0px;
+  margin: 0px;
+}
+
 .carousel {
   display: flex;
   flex-direction: column;

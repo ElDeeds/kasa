@@ -13,6 +13,8 @@ function Carousel({ images }) {
         setCurrentImageIndex(prevIndex => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
     };
 
+    const showArrows = images.length > 1;
+
     return (
         <div className="carousel">
             <img src={images[currentImageIndex]} alt={`Carrousel ${currentImageIndex}`} className='carouselImg' />
@@ -21,10 +23,12 @@ function Carousel({ images }) {
                 {currentImageIndex + 1}/{images.length}
             </div>
             {/* Flèches de navigation */}
-            <img src={LeftArrow} alt="Précédent" className='arrow leftArrow' onClick={goToPreviousImage} /> 
-            <img src={RightArrow} alt="Suivant" className='arrow rightArrow' onClick={goToNextImage} />
-                
-           
+            {showArrows && (
+                <>
+                    <img src={LeftArrow} alt="Précédent" className='arrow leftArrow' onClick={goToPreviousImage} />
+                    <img src={RightArrow} alt="Suivant" className='arrow rightArrow' onClick={goToNextImage} />
+                </>
+            )}
         </div>
     );
 }

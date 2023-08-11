@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { Navigate, useParams } from 'react-router-dom';
 import Banner from '../components/Banner';
 import Footer from '../components/Footer';
 import Tag from '../components/Tag';
@@ -11,6 +11,10 @@ import Collapse from '../components/Collapse';
 function Logements() {
     const { id } = useParams();
     const logement = logementsData.find(item => item.id === id);
+
+    if (!logement) {
+        return <Navigate to="/not-found" />;
+    }
 
     return (
         <div className="logementsContainer">
