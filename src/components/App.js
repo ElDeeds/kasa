@@ -10,6 +10,9 @@ function App() {
   return (
     <Router>
       <Routes>
+        {/* Due à GitHub */}
+        <Route path="/kasa" element={<Index />} />
+        {/* Routes */}
         <Route path="/" element={<Index />} />
         <Route path="/logements/:id" element={<LogementsID />} />
         <Route path="/about" element={<About />} />
