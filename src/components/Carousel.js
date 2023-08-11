@@ -16,7 +16,7 @@ function Carousel({ images }) {
     return (
         <div className="carousel">
             <img src={images[currentImageIndex]} alt={`Carrousel ${currentImageIndex}`} className='carouselImg' />
-
+            {/*Compteur de photos */}
             <div className="photoCounter">
                 {currentImageIndex + 1}/{images.length}
             </div>

@@ -19,10 +19,11 @@
       &Text{
         color: white;
         font-size: 14px;
+        font-weight: 500;
         position: absolute;
         bottom: 10px;
-        left: 10px;
-        max-width: 35%;
+        left: 15px;
+        max-width: 45%;
         @media (max-width: 767px) {
           max-width: 30%;
           padding-left: 3%;

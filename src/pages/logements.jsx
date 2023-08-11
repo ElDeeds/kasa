@@ -35,6 +35,7 @@ function Logements() {
                     
                         <div className='hostStars'>
                         <div className='logementDescHost'>
+                            {/* Nom et photo de l'hôte */}
                             <div className="hostName">
                                 <p className="hostFirstName">{logement.host.name.split(' ')[0]}</p>
                                 <p className="hostLastName">{logement.host.name.split(' ')[1]}</p>

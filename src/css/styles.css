@@ -201,10 +201,11 @@ footer p {
 .cardText {
   color: white;
   font-size: 14px;
+  font-weight: 500;
   position: absolute;
   bottom: 10px;
-  left: 10px;
-  max-width: 35%;
+  left: 15px;
+  max-width: 45%;
 }
 @media (max-width: 767px) {
   .cardText {
@@ -317,13 +318,13 @@ footer p {
   color: #FF6060;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 2s;
-}
-.collapseCard .collapseCardContent p {
-  padding: 10px;
+  transition: max-height 1.5s;
 }
 .collapseCard.open .collapseCardContent {
   max-height: 1000px;
+}
+.collapseCard .collapseCardContent p {
+  padding: 10px;
 }
 
 .arrowCollapse {
