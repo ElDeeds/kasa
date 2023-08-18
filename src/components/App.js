@@ -11,9 +11,6 @@ function App() {
       <Routes>
         {/* Due à GitHub */}
         <Route path="/kasa" element={<Index />} />
-        <Route path="/kasa/" element={<Index />} />
-        {/* Routes */}
-        <Route path="/" element={<Index />} />
         <Route path="/logements/:id" element={<Logements />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<NotFound />} />

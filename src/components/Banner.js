@@ -9,7 +9,7 @@ function Banner() {
         <img src={logo} alt="Logo" />
       </div>
       <nav className="headerNav">
-      <NavLink  to="/" activeclassname="activeLink">
+      <NavLink  to="/kasa" activeclassname="activeLink">
           Accueil
         </NavLink>
         <NavLink to="/about" activeclassname="activeLink">

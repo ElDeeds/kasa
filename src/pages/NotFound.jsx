@@ -13,7 +13,7 @@ function NotFound() {
       <div className="notFoundBody">
         <h1>404</h1>
         <p className='notFoundBodyTxt'>Oups! La page que vous demandez n'existe pas.</p>
-        <NavLink exact to="/" activeClassName="activeLink" className='notFoundLink'>
+        <NavLink exact to="/kasa" activeClassName="activeLink" className='notFoundLink'>
         Retourner sur la page d’accueil
         </NavLink>
       </div>
